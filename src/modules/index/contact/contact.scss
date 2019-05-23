@@ -1,0 +1,34 @@
+.contactBox {
+    height: 510px;
+    background: #302825;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    .company {
+        .companyT {
+            width: 300px;
+        }
+        .comDetail {
+            margin-top: 64px;
+        }
+        width: 600px;
+        font-size: 14px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 114px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            span:first-child {
+                display: inline-block;
+                width: 70px;
+                text-align: right;
+            }
+        }
+    }
+}

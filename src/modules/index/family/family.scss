@@ -1,0 +1,124 @@
+.ContentLeft {
+    font-size: 14px;
+    width: 795px;
+    img {
+        width: 100%;
+    }
+    margin-right: 65px;
+    .textKinds {
+        display: flex;
+        margin-top: 23px;
+        .textKindsItem {
+            width: 150px;
+            height: 40px;
+            background: #847557;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .activeKinds {
+            background: #D6C091;
+        }
+    }
+    .textKindsOne {
+        margin-top: 26px;
+        .text1 {
+            color: #736460;
+            line-height: 24px;
+        }
+        .text2 {
+            color: #736460;
+            font-size: 14px;
+            margin-top: 56px;
+            padding-bottom: 30px;
+            // border-bottom: 1px solid #736460;
+            h3 {
+                font-size: 16px;
+                color: #c2b4b0;
+                margin-bottom: 34px;
+            }
+            p {
+                line-height: 24px;
+            }
+            .text2Title {
+                margin-bottom: 34px;
+            }
+        }
+        .text3 {
+            color: #736460;
+            font-size: 14px;
+            padding: 30px 0;
+            border-top: 1px solid #736460;
+            h3 {
+                font-size: 16px;
+                color: #c2b4b0;
+                margin-bottom: 5px;
+            }
+            p {
+                line-height: 24px;
+            }
+        }
+    }
+    .textKindsTwo {
+        p {
+            color: #736460;
+            font-size: 14px;
+        }     
+        img {
+            width: 380px;
+            height: 360px;
+        }
+        .textKindsTwo_1 {
+            margin-bottom: 32px;
+        }
+        .textKindsTwo_2 {
+            margin-bottom: 28px;
+        }
+        .textKindsTwo_3 {
+            padding: 28px 0;
+            border-top: 1px solid #736460;
+            h4 {
+                margin-bottom: 28px;
+                font-size: 16px;
+                color: #c2b4b0;
+            }
+        }
+    }
+    .textKindsThree {
+        .textKindsThree_1 {
+            margin-top: 26px;
+            color: #736460;
+            h4 {
+                font-weight: normal;
+                font-size: 14px;
+                color: #c2b4b0;
+                margin-bottom: 30px ;
+            }
+            padding-bottom: 26px;
+            border-bottom: 1px solid #736460;
+        }
+    }
+}
+.ContentRight {
+    width: 224px;
+    // height: 500px;
+    .family{
+        margin-bottom: 30px;
+    }
+    .download {
+        margin-bottom: 20px;
+    }
+}
+.familyContent {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 1080px;
+    padding-top: 26px;
+    padding-bottom: 50px;
+}
+.familyContentBox {
+    background: #302825;
+}

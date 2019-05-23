@@ -1,0 +1,41 @@
+.bannerBox {
+    position: relative;
+    font-size: 0;
+    img {
+        width: 100%;
+    }
+    .modal {
+        box-sizing: border-box;
+        width: 340px;
+        height: 180px;
+        background: #241F1B;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 300px auto;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        padding: 30px;
+        .wel {
+            height: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .user {
+            font-size: 20px;
+            font-weight: bold;
+            height: 30px;
+            margin-bottom: 26px;
+        }
+        button {
+            width: 100%;
+            background: #D6C091;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

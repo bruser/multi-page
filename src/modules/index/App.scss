@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input,button {
+  outline-style: none;
+  border: none;
+}
+.header {
+  .header-login {
+    display: flex;
+    height: 50px;
+    background: #241F1B;
+    padding-left: 20px;
+    padding-right: 378px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .headerTips {
+      font-size: 14px;
+      color: #00FF00;
+    }
+    .loginBox {
+      font-size: 14px;
+      color: #fff;
+      span {
+        padding-right: 10px;
+      }
+      .loginBtn,.logoutBtn{
+        cursor: pointer;
+        padding-right: 10px;
+        color: #fff;
+      }
+    }
+  }
+  .navLink {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #241F1B url('../../images/bar1.png') ;
+    padding-left: 20%;
+    // background-position: center;
+    // background: #352B27;
+    // padding-left: 376px;/
+    .navLogo {
+      width: 168px;
+      height: 34px;
+      margin-right: 36px;
+      margin-top: 6px;
+    }
+    a {
+      margin-right: 50px;
+      font-size: 16px;
+      color: #736460;
+    }
+    a.active {
+      color: #fff
+    }
+  }
+
+}
+.footerLine {
+  width: 100%;
+  height: 25px;
+  background: #302825 url('../../images/homeSpiltLine.png')
+}
+.footer {
+  background: #241F1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 25px;
+
+  img {
+    width: 189px;
+    height: 55px;
+  }
+  .footerLink {
+    margin-top: 20px;
+    a,span {
+      margin-right: 30px;
+      font-size: 14px;
+      color: #736460;
+    }
+  }
+  .footerTips {
+    margin-top: 34px;
+    font-size: 14px;
+    color: #fff;
+
+  }
+  .footerAddress {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #736460;
+  }
+  .footerICP {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #fff;
+  }
+}

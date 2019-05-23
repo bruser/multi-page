@@ -1,0 +1,23 @@
+.avoidBox {
+    background: #302825;
+    padding-top: 68px;
+    padding-bottom: 76px;
+    .IssueBoxContain {
+        width: 800px;
+        margin: 0 auto;
+        h4 {
+            text-align: center;
+            font-size: 40px;
+            color: #c2b4b0;
+            margin-bottom: 76px;
+        }
+        p {
+            font-size: 14px;
+            color: #736460;;
+            line-height: 28px;
+        }
+        .Issuetext1 {
+            margin-bottom: 32px;
+        }
+    }
+}

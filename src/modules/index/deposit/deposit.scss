@@ -1,0 +1,96 @@
+.depositBox {
+    background: #302825;
+    padding-top: 85px;
+    .depositBoxContain {
+        width: 637px;
+        height: 500px;
+        margin:  auto;
+        .depositBoxHead {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .depositBoxHeadItem {
+                height: 40px;
+                background: #d7c091;
+                border-radius: 5px;
+                width: 150px;
+                text-align: center;
+                line-height: 40px;
+                color: #000;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            .activedepositBoxHeadItem {
+                background: #847557;
+            }
+        }
+        .depositBoxNum {
+            width: 637px;
+            height: 280px;
+            background: #241F1B;
+            margin-top: 32px;
+            padding-top: 27px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            .depositBoxNumItem {
+                display: flex;
+                padding-bottom: 20px;
+                .depositBoxNumItemLeft {
+                    margin-right: 24px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color:#736460;
+                    text-align: right;
+                    width: 60px;
+                }
+                .depositBoxNumItemRight_1 {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 40px;
+                    width: 280px;
+                    input {
+                        width: 160px;
+                        height: 40px;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                        padding-left: 10px;
+                    }
+                    button {
+                        flex: 1;
+                        border-radius: 5px;
+                        text-align: center;
+                        color: #000;
+                        background: #d7c091;
+                        cursor: pointer;
+                    }
+                    
+                }
+                .depositBoxNumItemRight {
+                    input {
+                        width: 280px;
+                        height: 40px;
+                        font-size: 14px;
+                        padding-left: 10px;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .depositNow {
+            width: 280px;
+            height: 40px;
+            background: #d7c091;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #000;
+            border-radius: 5px;
+            margin: 30px auto 0;
+            cursor: pointer;
+        }
+    }
+}

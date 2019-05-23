@@ -1,0 +1,561 @@
+.depositBox {
+  background: #302825;
+  padding-top: 85px; }
+  .depositBox .depositBoxContain {
+    width: 637px;
+    height: 500px;
+    margin: auto; }
+    .depositBox .depositBoxContain .depositBoxHead {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .depositBox .depositBoxContain .depositBoxHead .depositBoxHeadItem {
+        height: 40px;
+        background: #d7c091;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+        line-height: 40px;
+        color: #000;
+        cursor: pointer;
+        font-size: 14px; }
+      .depositBox .depositBoxContain .depositBoxHead .activedepositBoxHeadItem {
+        background: #847557; }
+    .depositBox .depositBoxContain .depositBoxNum {
+      width: 637px;
+      height: 280px;
+      background: #241F1B;
+      margin-top: 32px;
+      padding-top: 27px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box; }
+      .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem {
+        display: flex;
+        padding-bottom: 20px; }
+        .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem .depositBoxNumItemLeft {
+          margin-right: 24px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          color: #736460;
+          text-align: right;
+          width: 60px; }
+        .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem .depositBoxNumItemRight_1 {
+          display: flex;
+          justify-content: space-between;
+          height: 40px;
+          width: 280px; }
+          .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem .depositBoxNumItemRight_1 input {
+            width: 160px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 20px;
+            padding-left: 10px; }
+          .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem .depositBoxNumItemRight_1 button {
+            flex: 1;
+            border-radius: 5px;
+            text-align: center;
+            color: #000;
+            background: #d7c091;
+            cursor: pointer; }
+        .depositBox .depositBoxContain .depositBoxNum .depositBoxNumItem .depositBoxNumItemRight input {
+          width: 280px;
+          height: 40px;
+          font-size: 14px;
+          padding-left: 10px;
+          box-sizing: border-box;
+          border-radius: 5px; }
+    .depositBox .depositBoxContain .depositNow {
+      width: 280px;
+      height: 40px;
+      background: #d7c091;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      border-radius: 5px;
+      margin: 30px auto 0;
+      cursor: pointer; }
+
+.bannerBox {
+  position: relative;
+  font-size: 0; }
+  .bannerBox img {
+    width: 100%; }
+  .bannerBox .modal {
+    box-sizing: border-box;
+    width: 340px;
+    height: 180px;
+    background: #241F1B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 300px auto;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 30px; }
+    .bannerBox .modal .wel {
+      height: 20px;
+      font-size: 14px;
+      margin-bottom: 20px; }
+    .bannerBox .modal .user {
+      font-size: 20px;
+      font-weight: bold;
+      height: 30px;
+      margin-bottom: 26px; }
+    .bannerBox .modal button {
+      width: 100%;
+      background: #D6C091;
+      height: 40px;
+      border-radius: 5px;
+      cursor: pointer; }
+
+.loginContent {
+  height: 700px;
+  background: #302825;
+  position: relative; }
+  .loginContent .loginDetail {
+    box-sizing: border-box;
+    width: 388px;
+    height: 340px;
+    background: #241F1B;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 75px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0; }
+    .loginContent .loginDetail .userName p, .loginContent .loginDetail .password p {
+      font-size: 14px;
+      color: #736460;
+      margin-bottom: 2px; }
+    .loginContent .loginDetail .userName input, .loginContent .loginDetail .password input {
+      width: 280px;
+      height: 40px;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 14px; }
+    .loginContent .loginDetail .password {
+      margin-top: 5px; }
+    .loginContent .loginDetail button {
+      margin-top: 53px;
+      width: 288px;
+      height: 40px;
+      background: #D6C091;
+      border-radius: 5px;
+      cursor: pointer; }
+    .loginContent .loginDetail .register {
+      display: flex;
+      width: 288px;
+      justify-content: space-between;
+      margin-top: 18px;
+      color: #fff;
+      font-size: 14px; }
+      .loginContent .loginDetail .register p {
+        cursor: pointer; }
+
+.contactBox {
+  height: 510px;
+  background: #302825;
+  position: relative;
+  font-size: 14px;
+  color: #fff; }
+  .contactBox .company {
+    width: 600px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 114px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contactBox .company .companyT {
+      width: 300px; }
+    .contactBox .company .comDetail {
+      margin-top: 64px; }
+    .contactBox .company p span:first-child {
+      display: inline-block;
+      width: 70px;
+      text-align: right; }
+
+.ContentLeft {
+  font-size: 14px;
+  width: 795px;
+  margin-right: 65px; }
+  .ContentLeft img {
+    width: 100%; }
+  .ContentLeft .textKinds {
+    display: flex;
+    margin-top: 23px; }
+    .ContentLeft .textKinds .textKindsItem {
+      width: 150px;
+      height: 40px;
+      background: #847557;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 12px;
+      border-radius: 5px;
+      cursor: pointer; }
+    .ContentLeft .textKinds .activeKinds {
+      background: #D6C091; }
+  .ContentLeft .textKindsOne {
+    margin-top: 26px; }
+    .ContentLeft .textKindsOne .text1 {
+      color: #736460;
+      line-height: 24px; }
+    .ContentLeft .textKindsOne .text2 {
+      color: #736460;
+      font-size: 14px;
+      margin-top: 56px;
+      padding-bottom: 30px; }
+      .ContentLeft .textKindsOne .text2 h3 {
+        font-size: 16px;
+        color: #c2b4b0;
+        margin-bottom: 34px; }
+      .ContentLeft .textKindsOne .text2 p {
+        line-height: 24px; }
+      .ContentLeft .textKindsOne .text2 .text2Title {
+        margin-bottom: 34px; }
+    .ContentLeft .textKindsOne .text3 {
+      color: #736460;
+      font-size: 14px;
+      padding: 30px 0;
+      border-top: 1px solid #736460; }
+      .ContentLeft .textKindsOne .text3 h3 {
+        font-size: 16px;
+        color: #c2b4b0;
+        margin-bottom: 5px; }
+      .ContentLeft .textKindsOne .text3 p {
+        line-height: 24px; }
+  .ContentLeft .textKindsTwo p {
+    color: #736460;
+    font-size: 14px; }
+  .ContentLeft .textKindsTwo img {
+    width: 380px;
+    height: 360px; }
+  .ContentLeft .textKindsTwo .textKindsTwo_1 {
+    margin-bottom: 32px; }
+  .ContentLeft .textKindsTwo .textKindsTwo_2 {
+    margin-bottom: 28px; }
+  .ContentLeft .textKindsTwo .textKindsTwo_3 {
+    padding: 28px 0;
+    border-top: 1px solid #736460; }
+    .ContentLeft .textKindsTwo .textKindsTwo_3 h4 {
+      margin-bottom: 28px;
+      font-size: 16px;
+      color: #c2b4b0; }
+  .ContentLeft .textKindsThree .textKindsThree_1 {
+    margin-top: 26px;
+    color: #736460;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #736460; }
+    .ContentLeft .textKindsThree .textKindsThree_1 h4 {
+      font-weight: normal;
+      font-size: 14px;
+      color: #c2b4b0;
+      margin-bottom: 30px; }
+
+.ContentRight {
+  width: 224px; }
+  .ContentRight .family {
+    margin-bottom: 30px; }
+  .ContentRight .download {
+    margin-bottom: 20px; }
+
+.familyContent {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 1080px;
+  padding-top: 26px;
+  padding-bottom: 50px; }
+
+.familyContentBox {
+  background: #302825; }
+
+.IssueBox {
+  background: #302825;
+  padding-top: 68px;
+  padding-bottom: 76px; }
+  .IssueBox .IssueBoxContain {
+    width: 800px;
+    margin: 0 auto; }
+    .IssueBox .IssueBoxContain h4 {
+      text-align: center;
+      font-size: 40px;
+      color: #c2b4b0;
+      margin-bottom: 76px; }
+    .IssueBox .IssueBoxContain p {
+      font-size: 14px;
+      color: #736460;
+      line-height: 28px; }
+    .IssueBox .IssueBoxContain .Issuetext1 {
+      margin-bottom: 32px; }
+
+.protocolBox {
+  background: #302825;
+  padding-top: 68px;
+  padding-bottom: 76px; }
+  .protocolBox .IssueBoxContain {
+    width: 800px;
+    margin: 0 auto; }
+    .protocolBox .IssueBoxContain h4 {
+      text-align: center;
+      font-size: 40px;
+      color: #c2b4b0;
+      margin-bottom: 76px; }
+    .protocolBox .IssueBoxContain p {
+      font-size: 14px;
+      color: #736460;
+      line-height: 28px; }
+    .protocolBox .IssueBoxContain .Issuetext1 {
+      margin-bottom: 32px; }
+
+.avoidBox {
+  background: #302825;
+  padding-top: 68px;
+  padding-bottom: 76px; }
+  .avoidBox .IssueBoxContain {
+    width: 800px;
+    margin: 0 auto; }
+    .avoidBox .IssueBoxContain h4 {
+      text-align: center;
+      font-size: 40px;
+      color: #c2b4b0;
+      margin-bottom: 76px; }
+    .avoidBox .IssueBoxContain p {
+      font-size: 14px;
+      color: #736460;
+      line-height: 28px; }
+    .avoidBox .IssueBoxContain .Issuetext1 {
+      margin-bottom: 32px; }
+
+* {
+  box-sizing: border-box; }
+
+.forgetContent {
+  height: 700px;
+  background: #302825;
+  position: relative; }
+  .forgetContent .loginDetail {
+    box-sizing: border-box;
+    width: 388px;
+    height: 440px;
+    background: #241F1B;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 75px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0; }
+    .forgetContent .loginDetail .phone div {
+      width: 280px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between; }
+      .forgetContent .loginDetail .phone div button {
+        border-radius: 5px;
+        background: #D6C091;
+        font-size: 12px;
+        line-height: 40px;
+        width: 80px;
+        cursor: pointer; }
+      .forgetContent .loginDetail .phone div input {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 14px; }
+    .forgetContent .loginDetail .phone p {
+      font-size: 14px;
+      color: #736460;
+      margin-bottom: 2px; }
+    .forgetContent .loginDetail .userName p, .forgetContent .loginDetail .password p {
+      font-size: 14px;
+      color: #736460;
+      margin-bottom: 2px; }
+    .forgetContent .loginDetail .userName input, .forgetContent .loginDetail .password input {
+      width: 280px;
+      height: 40px;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 14px; }
+    .forgetContent .loginDetail .password {
+      margin-top: 5px; }
+    .forgetContent .loginDetail .loginBtn {
+      margin-top: 53px;
+      width: 288px;
+      height: 40px;
+      background: #D6C091;
+      border-radius: 5px;
+      cursor: pointer; }
+
+* {
+  box-sizing: border-box; }
+
+.registerContent {
+  height: 800px;
+  background: #302825;
+  position: relative; }
+  .registerContent .loginDetail {
+    box-sizing: border-box;
+    width: 388px;
+    height: 640px;
+    background: #241F1B;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 75px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0; }
+    .registerContent .loginDetail .phone div {
+      width: 280px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between; }
+      .registerContent .loginDetail .phone div button {
+        border-radius: 5px;
+        background: #D6C091;
+        font-size: 12px;
+        line-height: 40px;
+        width: 80px;
+        cursor: pointer; }
+      .registerContent .loginDetail .phone div input {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 14px; }
+    .registerContent .loginDetail .phone p {
+      font-size: 14px;
+      color: #736460;
+      margin-bottom: 2px; }
+    .registerContent .loginDetail .userName p, .registerContent .loginDetail .password p {
+      font-size: 14px;
+      color: #736460;
+      margin-bottom: 2px; }
+    .registerContent .loginDetail .userName input, .registerContent .loginDetail .password input {
+      width: 280px;
+      height: 40px;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 14px; }
+    .registerContent .loginDetail .password {
+      margin-top: 5px; }
+    .registerContent .loginDetail .loginBtn {
+      margin-top: 53px;
+      width: 288px;
+      height: 40px;
+      background: #D6C091;
+      border-radius: 5px;
+      cursor: pointer; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, button {
+  outline-style: none;
+  border: none; }
+
+.header .header-login {
+  display: flex;
+  height: 50px;
+  background: #241F1B;
+  padding-left: 20px;
+  padding-right: 378px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header-login .headerTips {
+    font-size: 14px;
+    color: #00FF00; }
+  .header .header-login .loginBox {
+    font-size: 14px;
+    color: #fff; }
+    .header .header-login .loginBox span {
+      padding-right: 10px; }
+    .header .header-login .loginBox .loginBtn, .header .header-login .loginBox .logoutBtn {
+      cursor: pointer;
+      padding-right: 10px;
+      color: #fff; }
+
+.header .navLink {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #241F1B url(images/bar1.png?16e1afe2452d5d4084974c985fd5e3e6);
+  padding-left: 20%; }
+  .header .navLink .navLogo {
+    width: 168px;
+    height: 34px;
+    margin-right: 36px;
+    margin-top: 6px; }
+  .header .navLink a {
+    margin-right: 50px;
+    font-size: 16px;
+    color: #736460; }
+  .header .navLink a.active {
+    color: #fff; }
+
+.footerLine {
+  width: 100%;
+  height: 25px;
+  background: #302825 url(images/homeSpiltLine.png?a6c94c56249eea86d69a77e8861d2d5e); }
+
+.footer {
+  background: #241F1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 25px; }
+  .footer img {
+    width: 189px;
+    height: 55px; }
+  .footer .footerLink {
+    margin-top: 20px; }
+    .footer .footerLink a, .footer .footerLink span {
+      margin-right: 30px;
+      font-size: 14px;
+      color: #736460; }
+  .footer .footerTips {
+    margin-top: 34px;
+    font-size: 14px;
+    color: #fff; }
+  .footer .footerAddress {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #736460; }
+  .footer .footerICP {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #fff; }
+

@@ -1,0 +1,60 @@
+const WebpackDevServer = require("webpack-dev-server");
+const webpack = require("webpack");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+let webpackConfig = require('../build_setting/webpack.config');
+const { server: serverConfig, htmlChunk, favicon } = require('../.compile');
+// module.exports = (args) => {
+//   const { port } = args;
+const port = 3000;
+Object.values(webpackConfig.entry).map((item) => {
+    item.push(`webpack-dev-server/client?http://localhost:${port}/`);
+    item.push(`webpack/hot/only-dev-server`);
+    item.push(`react-hot-loader/patch`)
+});
+Object.keys(webpackConfig.entry).map((name) => {
+    let htmlConfig = {
+        filename: name + '.html',
+        template: path.resolve(__dirname, '../build_setting/template.html'),
+        title: name,
+        headChunk: [],
+        scriptChunk: []
+    };
+    if (htmlChunk) {
+        let hc = htmlChunk["$all"] || {};
+        if (hc.filename) htmlConfig.filename = hc.filename;
+        if (hc.template) htmlConfig.template = hc.template;
+        if (hc.title) htmlConfig.title = hc.title;
+        if (hc.headChunk) htmlConfig.headChunk = hc.headChunk;
+        if (hc.scriptChunk) htmlConfig.scriptChunk = hc.scriptChunk;
+        if (htmlChunk[name]) {
+            hc = htmlChunk[name];
+            if (hc.filename) htmlConfig.filename = hc.filename;
+            if (hc.template) htmlConfig.template = hc.template;
+            if (hc.title) htmlConfig.title = hc.title;
+            if (hc.headChunk) htmlConfig.headChunk = [...htmlConfig.headChunk, ...hc.headChunk];
+            if (hc.scriptChunk) htmlConfig.scriptChunk = [...htmlConfig.scriptChunk, ...hc.scriptChunk];
+        }
+    }
+    webpackConfig.plugins.push(new HtmlWebpackPlugin({
+        filename: htmlConfig.filename,
+        template: htmlConfig.template,
+        //var HtmlWebpackPlugin = require('html-webpack-plugin');
+        title: htmlConfig.title,  //配合html-webpack-plugin的配置,
+        chunks: [name],
+        favicon,
+        headChunk: htmlConfig.headChunk.join('\n'),
+        scriptChunk: htmlConfig.scriptChunk.join('\n')
+    }));
+});
+webpackConfig.mode = 'development';
+let alias = serverConfig.alias;
+if (alias) webpackConfig.resolve.alias = alias;
+let server = new WebpackDevServer(webpack(webpackConfig), {
+    hot: true,
+    inline: true,
+    compress: true,//一切服务都启用gzip 压缩：
+    // stats: 'errors-only'
+});
+server.listen(port, "0.0.0.0");
+// };
